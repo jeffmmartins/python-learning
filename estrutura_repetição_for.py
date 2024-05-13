@@ -22,3 +22,14 @@ while opcao != 0:
         print("Sacando")
     elif opcao == 2:
         print("Exibindo o extrato")
+    else:
+        print("obrigado plea preferencia")
+
+#exemplo break
+while True:
+    numero = int(input("Digite um numero: "))
+
+    if numero == 10:
+        break
+
+    print(numero)
