@@ -16,7 +16,12 @@ while True:
     opcao = input(menu)
 
     if opcao == "d":
-        print("deposito feito")
+        deposito = float(input("Digite um valor: "))
+        if deposito > 0:
+            saldo += deposito
+            extrato += f"Valor do Depósito R$ : {deposito:.2f}\n"
+        else:
+            print("Desculpa houve um erro na operação")
     
     elif opcao == "s":
         print("saque realizado")
