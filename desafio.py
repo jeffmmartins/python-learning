@@ -27,7 +27,7 @@ while True:
         print("saque realizado")
 
     elif opcao == "e":
-        print("segue extrato")
+        print(extrato)
     
     elif opcao == "q":
         print("saque realizado")
