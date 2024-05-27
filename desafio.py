@@ -30,7 +30,7 @@ while True:
 
         excedeu_limite = deposito > limite
 
-        excedeu_saque = deposito >= LIMITES_SAQUES
+        excedeu_saque = numero_saques >= LIMITES_SAQUES
 
         if excedeu_saldo :
             print(" Operação falhou! você não tem saldo suficiente")
@@ -54,9 +54,9 @@ while True:
         print("Não foram realizados movimentações." if not extrato else extrato)
         print(f"\nSaldo: R$ {saldo:.2f}")
         print("================================================")
-        
+
     elif opcao == "q":
-        print("saque realizado")
         break
+
     else:
-        print("Favor digitar uma das opções acima")
+        print("Operação inválida, por favor selecione novamente a operação desejada")
